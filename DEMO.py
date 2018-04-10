@@ -14,6 +14,7 @@ for a in A:
     B.append(b[0])
     i+=1
 #从这步开始可以获取到A、B两个列表，可根据单个元素直接操作
+#正式程序中可以在一个循环中完成全部动作
 path_from='F:\git\personal\\No001_file_distribution\\test\\origin'
 path_to='F:\git\personal\\No001_file_distribution\\test\\target'
 def initial(pat):
