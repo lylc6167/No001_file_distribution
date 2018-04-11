@@ -6,7 +6,7 @@ import os
 
 path_old=  'F:\git\personal\\No001_file_distribution\\test\\origin\\origin\\'
 path_new=  'F:\git\personal\\No001_file_distribution\\test\\target\\'
-
+path_index='F:\\git\\personal\\No001_file_distribution\\test\\origin\\index.txt'
 #初始化目录，视情况调用,
 #def initial(pat):
 #    pat=pat.strip().rstrip('\\')
@@ -17,7 +17,7 @@ for path_old, w, files in result:
     pass
 #print(files)
 
-with open('F:\\git\\personal\\No001_file_distribution\\test\\origin\\index.txt','a') as f:
+with open(path_index,'a') as f:
     #覆盖写模式是w，续写模式是a
    for fi in files:
        fi=[''.join(fi)+'\n']
