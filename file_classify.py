@@ -25,7 +25,7 @@ with open(path_index,'a') as f:
        try:
            f.writelines(fi)
        except UnicodeEncodeError:
-           f.writelines('Encoding Error!!!!!!!!!')
+           f.writelines('Encoding Error!!!!!!!!!'+'\n')#首次实测忘了加换行符，导致结果粘连
 
 
 for file in files:
